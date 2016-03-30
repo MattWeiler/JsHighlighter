@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" language="javascript" src="../scripts/external/pnglib.js"></script>
+		<script type="text/javascript" language="javascript" src="../scripts/highlighter.js"></script>
+		
+		<script type="text/javascript" language="javascript">
+		<!--
+			var highlighter = new Highlighter({
+				'backgroundRed': 255,
+				'backgroundGreen': 0,
+				'backgroundBlue': 0,
+				'backgroundAlpha': 155,
+				'fillRed': 0,
+				'fillGreen': 0,
+				'fillBlue': 255,
+				'fillAlpha': 75,
+				'radiusMultiplier': 1.65,
+				'loggingLevel': 'debug'
+			});
+			
+			function showHighlighting()
+			{
+				var highlightObjects = new Array();
+				
+				var icon1 = document.getElementById('icon1');
+				var icon2 = document.getElementById('icon2');
+				var icon3 = document.getElementById('icon3');
+				
+				highlightObjects.push(icon1);
+				highlightObjects.push(icon2);
+				highlightObjects.push(icon3);
+				
+				highlighter.init(highlightObjects);
+				highlighter.showHighlight();
+			};
+		-->
+		</script>
+		
+		<style>
+			body
+			{
+				margin: 0px;
+			}
+			
+			.highlightPanel
+			{
+				position: fixed;
+				left: 0px;
+				right: 0px;
+				top: 0px;
+				bottom: 0px;
+				
+				width: 100%;
+				height: 100%;
+				
+				border: none;
+				background-color: transparent;
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+			}
+			
+			#icon1
+			{
+				position: fixed;
+				left: 50px;
+				top: 50px;
+				
+				font-size: xx-large;
+			}
+			
+			#icon2
+			{
+				position: fixed;
+				right: 50px;
+				bottom: 50px;
+				
+				font-size: xx-large;
+			}
+			
+			#icon3
+			{
+				position: fixed;
+				left: 50%;
+				top: 50%;
+				
+				font-size: xx-large;
+				
+				transition: transformX(-50%) transformY(-50%);
+			}
+		</style>
+	</head>
+	<body onload="showHighlighting();">
+		<div id="icon1">Hello</div>
+		<div id="icon2">there</div>
+		<div id="icon3">partner</div>
+	</body>
+</html>
