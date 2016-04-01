@@ -2,6 +2,8 @@
 
 JsHighlighter can be used to place a highlight layer above the current web page and draw circles around specified DOM elements.
 
+This builds a PNG image on demand. For large images, building the image can be slow.
+
 ![alt text](screenshot.png "screenshot")
 
 The color of the background and of the circles can be specified in the constructor.
