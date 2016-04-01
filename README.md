@@ -8,7 +8,7 @@ The color of the background and of the circles can be specified in the construct
 
 
 ## Usage
-Please see [sample](samples/index.html) for a working sample.
+Please see [Working Sample](https://cdn.rawgit.com/MattWeiler/JsHighlighter/master/samples/index.html) for a working sample.
 
 1) Include the `scripts/highlighter.js` and `scripts/external/pnglib.js` scripts in your `html/head` element.
 ```
